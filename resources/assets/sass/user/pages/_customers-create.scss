@@ -1,0 +1,40 @@
+/*Large Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+	body.customers{
+		div.ng-container.create{ 
+			table{ width: 720px; }
+		}
+	}	
+}
+
+body.customers{
+	div.ng-container.create{ 
+		max-width: 1100px;  
+
+		thead{
+			color: white;
+			background-color: #343838;
+
+			th.name{ width: 180px; }
+			th i{ vertical-align: middle; }
+		}
+
+
+	}
+}
+	

@@ -1,0 +1,142 @@
+@import '../mixins';
+
+div.ng-container{ min-height: 380px; }
+
+body .navbar-nav > li.topbar-profile > .dropdown-menu > li > a{
+	padding: 8px 10px 10px 10px;
+}
+
+@each $page in friends customers books sports setting{
+	body.#{$page} #sidebar-menu > ul > li.#{$page} > a{
+		background: #68C39F !important;
+	}
+}
+
+/* sub-account ui control */
+body#body.pm-books-none .pm-books,
+body#body.pm-sports-none .pm-sports{
+	display: none;
+}
+
+body#body.pm-books-read .pm-books-write,
+body#body.pm-sports-read .pm-sports-write{
+	display: none;
+}
+
+.pm-books-write.only-deny,
+.pm-sports-write.only-deny{
+	display: none;
+}
+
+body#body.pm-books-read .pm-books-write.only-deny,
+body#body.pm-sports-read .pm-sports-write.only-deny{
+	display: block;
+}
+body#body.pm-books-read tr.pm-books-write.only-deny,
+body#body.pm-sports-read tr.pm-sports-write.only-deny{
+	display: table-row;
+}
+
+/* subscription ui-control */
+body#body .for-subscribed-sports{ display: none; }
+body#body.has-subscribed-sports .for-subscribed-sports{ display: block; }
+
+/* top nav */
+ul.nav.feed span.equation{
+	font-family: 'Open Sans';
+	font-size: 16px;
+	margin: 5px 0 10px 0;
+}
+
+a, a.dropdown-toggle{ cursor: pointer; }
+
+.amount{
+	font-weight: bold;
+	&.positive{ color:$color-font-positive ; }
+	&.negative{ color:$color-font-negative ; }
+}
+
+i.fa.button{ cursor: pointer; }
+i.fa{ vertical-align: middle; }
+.topbar i.fa{ vertical-align: initial; }
+
+.alert.alert-danger{ display: none; }
+.alert.alert-danger.error{ display: block; }
+.messages>span{ display: none; }
+@each $error in 
+	e-unexpected
+	e-api-not-found
+	system-maintenance
+
+	require-name
+	require-password
+	require-email
+	require-book
+	require-account
+	require-username
+	require-source
+	require-manual-login
+	require-book-name
+	require-description 
+	no-source-account
+	no-permission
+
+	invalid-name
+	invalid-access 
+	invalid-email
+	invalid-username
+	invalid-password
+	invalid-date
+	invalid-debit-credit
+
+	unique-username
+	unavailable-username
+	password-not-confirm
+	password-not-correct
+
+	require-those
+	invalid-address
+	invalid-country
+	invalid-coordinate
+{
+	.alert.alert-danger.error.#{$error} .messages>span.#{$error}{
+			display: inline;
+	}
+}
+
+.messages .fa-2x{ vertical-align: middle; }
+		
+/********************** angular **********************/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .preloading {
+    > div:not(.load-container){
+      display: none !important;
+    }
+    > div.load-container{
+      display: table !important;
+    }
+}
+
+.capitalize{ text-transform: capitalize; }
+.uppercase{ text-transform: uppercase; }
+.text-center{ text-align: center; }
+table tr.silver td{ 
+	background-color: #C6C9CE !important;
+	color: black !important;
+}
+table tr td{ vertical-align: middle !important; }
+.pointer:hover{ cursor: pointer; }
+.circle{
+	border-radius: 50%;
+}
+.highlight{
+	padding: 0px 3px;
+    background-color: #bcbfbf;
+    box-shadow: 1px 1px 16px 4px #232928;
+}
+.inline-block{ display: inline-block; }
+.btn[disabled]{	opacity: 0.2;}
+.booking-ref{ 
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #444;
+}

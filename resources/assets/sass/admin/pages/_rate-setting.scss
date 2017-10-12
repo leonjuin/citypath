@@ -1,0 +1,49 @@
+/*Large Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+
+}
+
+
+.rate-setting{
+	.tab.row{
+		.nav li a{
+			background-color: white; 
+			color: black;
+		}
+		.nav li.active a{
+			background-color: #E1BD85;
+			color: white;
+		}
+		.row{ margin-top: 10px; }
+		table.room-rate.table{ 
+			tr.cream th, tr.cream td{
+				background-color: #E1BD85 !important;
+				color: white !important;
+			}
+			tr th{ background-color: white; }
+			.white tr td{ background-color: white; }
+			tr:nth-of-type(odd) td{ background-color: white; }
+			tr:nth-of-type(even) td{ background-color: #f5f5f5; }
+		}
+		.cream{
+			background-color: #E1BD85 !important;
+			color: white;
+		}
+	}
+	/* next element is chained inside*/
+}

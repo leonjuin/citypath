@@ -1,0 +1,35 @@
+.index {
+	.main{
+		vertical-align: top;
+	}
+	.right{
+		display: table;
+		.cell{
+			display: table-cell; vertical-align: middle;
+		}
+	}
+}
+
+.masthead-left {
+	position: absolute; width: 60%; max-width: 350px; top: 8%; left: 8%;
+}
+
+.index-content {
+	padding: 0;height:100%;
+	img {
+		width:100%;
+	}
+}
+
+
+.btn-facebook {
+	border: none; border-radius: 8px; background-color: #3b5998; box-shadow: 0 5px 1px 1px #314a7f; margin-bottom: 50px;
+}
+
+.btn-facebook:hover {
+	background-color: #314a7f; box-shadow: 0 5px 1px 1px #23345a; color: #FFFFFF
+}
+
+.btn-facebook:active:hover, .btn-facebook.active:hover, .open>.dropdown-toggle.btn-facebook:hover, .btn-facebook:active:focus, .btn-facebook.active:focus, .open>.dropdown-toggle.btn-facebook:focus, .btn-facebook:active.focus, .btn-facebook.active.focus, .open>.dropdown-toggle.btn-facebook.focus {
+	background-color: #314a7f; box-shadow: 0 2px 1px 1px #23345a; transform: translateY(3px);
+}

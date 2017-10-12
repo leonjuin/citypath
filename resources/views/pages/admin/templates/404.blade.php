@@ -1,0 +1,1 @@
+<h1 style="text-transform: uppercase;">Page not found!</h1>

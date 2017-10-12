@@ -1,0 +1,41 @@
+/*Large Desktop*/
+@media (min-width: 1200px){}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px){}
+
+/*Phone*/
+@media (max-width: 767px){
+	body.sports{ 
+		div.ng-container.settlement-history{ 
+			div.list table{ width: 720px; }
+		}
+	}	
+}
+
+body.sports{ 
+	div.ng-container.settlement-history{ 
+		max-width: 1100px;
+
+		div.list table{
+			background-color: #f8f8f8;				
+			thead{
+				color: white;
+				background-color: #343838;
+				th.amount{ text-align: right; }
+			}
+			tbody{
+				td{ line-height: 32px; vertical-align: middle; }
+				td.amount{ text-align: right; }
+				td.amount.debit{ color: $color-font-debit }
+				td.amount.credit{ color: $color-font-credit }
+				td.amount.negative{ color: $color-font-credit }
+				td.date{ text-align: center; }
+			}				
+		}
+		
+	}
+}

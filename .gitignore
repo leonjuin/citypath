@@ -1,0 +1,10 @@
+/_ref/
+/.env.*
+
+/vendor/
+/node_modules/
+/public
+
+.DS_Store
+/mix-manifest.json
+note

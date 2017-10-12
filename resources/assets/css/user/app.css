@@ -1,0 +1,468 @@
+/************ NAVIGATION BAR **************/
+
+.current-menu-item {
+	background-color: #E1BD85;
+	color:#fff !important;
+}
+
+.header_content:after {
+	box-shadow:0 1px 8px 0 rgba(0,0,0,0.58);
+}
+
+.current-item {
+	border-bottom: 1px solid #E1BD85;
+}
+
+/************ HOME **************/
+
+.home-about .img img {
+	height: 312px;
+}
+
+.our-best .img img {
+	height: 390px;
+}
+
+.bg-13 {
+	background-image:url(/templates/lotus/assets/images/banner/img-13.jpg);
+}
+
+.bg-14 {
+	background-image:none;
+}
+
+.event-item .img img {
+	height: 350px;
+}
+
+.section-gallery .gallery-content .gallery_item img {
+	height:150px;
+}
+
+.check-availability:before {
+	background-image:none;
+}
+
+.check-availability .availability-form .bootstrap-select.btn-group.awe-select .caret {
+	background:none;
+}
+
+.home-arrival-date,
+.home-departure-date {
+	margin-right: 20px;
+	vertical-align: middle;
+	background-color: transparent!important;
+	border: 2px solid #fff !important;
+	width: 100%;
+	
+}
+
+.awe-calendar-wrapper input[type="text"]{
+	color:#fff;
+}
+
+.home-arrival-date::placeholder,
+.home-departure-date::placeholder{
+	color: #fff;
+}
+
+
+/*********** ABOUT **************/
+
+.bg-9{
+	background-image: url(/templates/lotus/assets/images/banner/img-13.jpg);
+	background-size:cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.about-item .img img {
+	height: 420px;
+}
+
+.bg-10 {
+	background-image: none;
+	background-color: #E1BD85;
+}
+
+.team_item .img img {
+	height: 200px;
+}
+
+/********* ROOM DETAILS ***********/
+.room-detail_img .room_img-item img {
+	height: 496px;
+}
+
+.room-detail_thumbs a img {
+	height:85px;
+}
+
+/********* ROOM ********************/
+
+.room_item-6 {
+	background-position: 100% 64%;
+}
+
+.total-input {
+	width: 30%;
+	padding: 0;
+}
+
+.glyphicon  {
+	color:#fff;
+	font-size: 25px;
+}
+
+.btn-plus {
+	margin-left: -5px;
+	width: 40px;
+}
+
+.btn-minus {
+	margin-right: -5px;
+	width: 40px;
+}
+
+.btn-plus .total-input-inner, .btn-minus .total-input-inner {
+	padding: 0;
+}
+
+
+input[type=number] {
+	font-size: 14px;
+}
+
+.total-input-inner {
+	width: 100%;
+	background-color:#E1BD85;
+}
+
+.total-input .btn{
+	border-radius: 0;
+	height: 38px;
+}
+
+.total-input .btn:hover{
+	border-color: #E1BD85;
+	background-color: #fff;	
+}
+
+.reservation-room_item .reservation-room_package .reservation-room_package-more:after {
+	content: none;
+}
+/********* GALLERY ***************/
+
+.gallery-content .gallery_item .icon {
+	background:none;
+}
+
+
+/************ RESERVATION **************/
+.awe-btn.awe-btn-default {
+	background-color: #e1bd85;
+	border-color:#e1bd85;
+	color:#fff;
+}
+
+.guest {
+	margin-top: 20px;
+}
+
+.adults-btn, .children-btn {
+	min-width:100px !important;
+	margin-left: 20px;
+}
+
+.book-now {
+	float:right;
+}
+.book-now:hover {
+	background-color:transparent;
+	border:1px solid #000;
+	color:#000;
+}
+
+.amount-paid {
+	border: 1px solid #e1bd85;
+	height: 40px;
+	line-height: 34px;
+}
+
+.amount-paid .total-amount {
+	float: right;
+	color: #e1bd85;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.middle {
+	width: 59px;
+}
+
+#totalnights {
+	font-style: italic;
+	color: #e1bd85;
+}
+
+.datefrom,
+.dateto {
+	background-color:#fff;
+	border-width:0;
+	height:30px;
+	line-height:30px;
+	color:#898989;
+	font-weight:500;
+	padding: 0 30px 0 10px;
+	width: 100%;
+	font-family: 'Montserrat';
+	font-size: 12px;
+
+}
+
+.total-rooms li {
+	height: 40px;
+	padding: 0;
+}
+
+
+/**********CHOOSE ROOM ***********/
+#reservation_content {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.disabledcontent {
+	pointer-events:none;
+	opacity:0.3;
+}
+
+.not-active {
+	pointer-events: none;
+	cursor: default;
+}
+
+
+.room-per-quantity-price {
+	font-style: italic;
+	text-align: center; 
+	font-weight: 700;
+}
+
+
+.amount-total {
+	position: fixed; 
+    bottom: 20px; 
+    left: 50px;
+    height: 40px;
+    width: 250px;
+    z-index: 100;
+    padding: 10px;
+    background-color: #232323;
+    box-shadow: 0px 0px 20px 7px #b5b5b7;
+    color: white;
+}
+
+
+.amount-total span {
+	float:right;
+}
+
+.col-price {
+	text-align:right;
+}
+
+.room-no {
+	padding-top: 5px;
+}
+
+.btn-min, .btn-plus {
+	background-color: #E1BD85;
+}
+
+.input-number {
+	height:41px !important; 
+	background-color: #fff; 
+	border-right:0; 
+	text-align: center;
+}
+
+.text-room { 
+	background-color: #E1BD85;
+	 color:#fff; 
+	 border-left:0
+}
+
+.choose-room-instruction {
+	background-color: #E1BD85;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 6px #8e8686;
+}
+
+.choose-room-instruction h2 {
+	color:#fff;
+}
+
+.choose-room-instruction-content {
+	margin-top: 17px;
+}
+
+.reservation-room_item .reservation-room_img {
+   margin-top: 0;
+   width: 300px;
+
+}
+
+.reservation-room_content {
+	width: 100%;
+	position:relative;
+	margin-top:100px;
+}
+
+.reservation-room_item .reservation-room_text {
+	margin-top: 0;
+}
+
+/********** BOOK YOUR STAY ***********/
+.reservation-option {
+	text-transform: uppercase;
+}
+
+.guest-details {
+	font-weight: 700;
+}
+
+.reservation-room-seleted_total{
+	padding: 20px;
+}
+
+.check-in,.check-out {
+	text-transform: lowercase !important;
+	font-size: 14px;
+}
+
+.reservation-room-seleted_name h2 {
+	color:#e1bd85;
+}
+
+.sidebar-total {
+	margin-top: 0;
+}
+
+.total-each-room {
+	margin-right:0 !important;
+}
+
+.invalid {
+	border:1px solid red !important;
+	box-shadow:0 0 10px red;
+}
+
+/************* CONFIRMATION ************/
+
+.room-wrap-2 {
+	border:1px solid #E1BD85;
+	padding:10px;
+}
+
+.room-wrap-heading {
+	font-size: 30px;
+	letter-spacing:4px;
+    text-transform: uppercase;
+    background-color: #E1BD85;
+   	color:#fff;
+}
+
+.room-wrap-2 .room_item-2 {
+	margin-top: 50px;
+}
+
+.confirmation-total{
+	margin-top: 20px;
+}
+
+.room_item-2 .reservation-heading {
+	text-align: left; 
+	font-size: 20px; 
+	border-bottom:0;
+}
+
+.room_item-2 .room_name h5{
+	text-transform: uppercase;
+}
+
+/***************** DELUXE TRIPLE ROOM ***********/
+.deluxe-row {
+	margin-top: 10px;
+}
+
+.awe-btn-dt {
+	height: 50px;
+    line-height: 30px;
+}
+
+/*---For Tablet---*/
+@media only screen and (max-width: 1024px) {
+	.col-button {
+		width: 232px;
+	}
+
+	.reservation-room_content {
+		margin-top: 50px;
+	}
+}
+
+/*---For Mobile Phones---*/
+@media only screen and (max-width: 767px){
+
+	/********** CHOOSE ROOM ***********/
+	
+	.col-price {
+		margin-top: 21px;
+		text-align:left;
+	}
+
+	.col-button {
+		width: 232px;
+	}
+
+	.total-rooms {
+		margin-top:20px;
+	}
+
+	
+	.room-no {
+		padding-right: 10px;	
+	}
+
+	.adults, .children{
+		padding: 0;
+	}
+
+	.children {
+		padding-left: 10px;
+	}
+
+	.adults select, .children select {
+		margin-left: 1px;
+	}
+
+	.reservation-room_content {
+		margin-top: 50px;
+	}
+
+	.reservation-room_item .reservation-room_img{
+		width: 100%;
+	}
+
+	.room-wrap-heading {
+		font-size: 18px;
+	}
+
+}
+img{ object-fit: cover !important; }
+

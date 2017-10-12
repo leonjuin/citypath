@@ -1,0 +1,1 @@
+<img src="/templates/lotus/assets/images/reservation/superior-queen.jpg" alt="">

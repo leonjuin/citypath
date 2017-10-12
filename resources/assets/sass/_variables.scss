@@ -1,0 +1,10 @@
+$cdn-static : "";
+@function asset-url($path){
+  @return $cdn-static + '/assets/' + $path;
+}
+
+// Color
+$color-font-debit: #032B43;
+$color-font-credit: #D00000;
+$color-font-positive: #032B43;
+$color-font-negative: #D00000;

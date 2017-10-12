@@ -1,0 +1,125 @@
+/*Large Desktop*/
+@media (min-width: 1200px){}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px){
+	body.sports{ 
+		div.ng-container.settlement{ 	
+			.actions.row{ }
+			.actions.row a,
+			.actions.row button{ display: block; width: 100%; }
+			.actions.row .text-right{ text-align: left; }
+		}
+	}
+}
+
+/*Phone*/
+@media (max-width: 767px){
+	body.sports{ 
+		div.ng-container.settlement{ 	
+			.actions.row{ width: 290px; }
+			.actions.row a,
+			.actions.row button{ display: block; width: 100%; }
+			.actions.row .text-right{ text-align: left; }
+		}
+
+		table.table.summary,
+		table.table.preview{ width: 820px; }
+	}
+}
+
+body.sports{ 
+	div.ng-container.settlement{ 
+		max-width: 1100px;
+
+		table.table > tbody > tr > td{
+			padding: 4px 4px;
+		}
+
+		#daterange{ 
+			background: #fff; 
+			cursor: pointer; 
+			padding: 6px 10px; 
+			border: 1px solid #ccc; 
+			width:260px;
+			margin:0px 0 10px 0;
+		}
+
+		textarea{ width: 100%; height: 280px; font-size: 12px; }
+
+		.row.info{ 
+			margin: 15px auto; 
+			div{ background-color: #fafafa; padding: 10px; }
+			i{ vertical-align: middle; }
+		}
+
+		.info.no-report{
+			i.fa-warning{ vertical-align: middle; margin-right: 20px; }
+		}
+
+		.preview, .book-summary{
+			background-color: #f8f8f8;		
+			thead{
+				color: white;
+				background-color: #343838;
+				.amount{ text-align: right; }
+			}
+			tfoot{
+				color: white;
+				background-color: #626868;
+				td{ text-align: right; font-weight: bold; }
+
+			}
+			tbody{
+				td{ vertical-align: middle; }
+				td.remark{ font-style: italic; color: #283c3c; font-size:13px; }
+				a{ text-decoration: none; color: #222 }
+				.bold{ font-weight: bold; }
+				.amount{ text-align: right; }
+				.debit.on{ color: $color-font-debit; }
+				.credit.on{ color: $color-font-credit; }
+				.balance{ font-weight: bold; }
+				.balance.negative{ color: $color-font-credit; }
+			}
+		}
+
+		.preview{}
+		.book-summary{
+			tbody{
+				.amount{
+					&.debit, 
+					&.amount.credit, 
+					&.amount.balancebf{ font-weight: normal; }
+				}
+
+				.balance{ color: $color-font-debit; }
+			}
+		}
+
+		.widget-header h2{ padding-right: 50px; padding-top: 6px; }
+
+		.alert.alert-danger{ display: none; }
+		.alert.alert-danger.error{ display: block; }
+		.messages>span{ display: none; }
+		@each $error in 
+			system-maintenance 
+			require-manual-login
+			invalid-access 
+			only-sub-account 
+			no-report-access 
+			api-not-found
+			unexpected
+		{
+			.alert.alert-danger.error.#{$error} .messages>span.#{$error}{
+					display: inline;
+			}
+		}
+		.messages .fa-2x{ vertical-align: middle; }
+
+	}
+
+
+}

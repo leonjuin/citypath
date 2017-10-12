@@ -1,0 +1,78 @@
+/*Large Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+	body.friends{
+		div.ng-container.friends{ 
+			.friend-search .form-inline,
+			.friend-search .form-control{
+				display: inline-block;
+				width: auto;
+			}
+
+			.tab-content table{ min-width: 360px; }
+		}
+	}	
+}
+
+body.friends{
+	div.ng-container.friends{ 
+		max-width: 1100px;
+		
+		.nav-tabs i.fa-star,
+		i.fa-star.on,
+		i.fa-star-o.on{ color: #FFA800; }
+
+		.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+			vertical-align : middle;
+		}
+		
+		div.friend-search form{ 
+			margin:-30px 0 10px 0;
+			input[type=text]{
+				width: 280px;
+			}
+		}
+		div.list{ 
+			.tab-content{ background-color: #f8f8f8; }
+		}	
+
+		thead{
+			color: white;
+			background-color: #343838;
+		}
+
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+			background-color: #f8f8f8;
+		}
+
+		.panel-body i{ vertical-align: middle; margin-right: 8px; }
+
+		.tab-content{ 
+			padding:10px 15px;
+			i.fa-info-circle{ vertical-align: middle; margin-right: 8px; }
+
+			td i{ margin: 3px; }
+			td.balance{ 
+				text-align: right; font-weight: bold;
+				&.positive{ color:$color-font-positive ; } 
+				&.negative{ color:$color-font-negative ; } 
+			}
+		}		
+	}
+
+
+}

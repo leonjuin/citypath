@@ -1,0 +1,72 @@
+/*Large Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+	body.books{
+		div.ng-container.overview{ 
+			table{ width: 560px; }
+			#daterange.pull-right{ float:left!important; margin:-10px 0 10px 0; }
+		}
+	}
+}
+
+body.books{
+	div.ng-container.overview{ 
+		max-width: 1100px;
+
+		#daterange{ 
+			background: #fff; 
+			cursor: pointer; 
+			padding: 5px 10px; 
+			border: 1px solid #ccc; 
+			width:280px;
+			margin:-30px 0 10px 0;
+		}
+
+		.balance-debit{
+			table{ border-left:3px solid $color-font-debit; }
+			tbody td.balance{ color: $color-font-debit }
+		}
+		.balance-credit{
+			table{ border-left:3px solid $color-font-credit; }
+			tbody td.balance{ color: $color-font-credit }
+		}
+
+		table{
+			background-color: #f8f8f8;		
+			thead{
+				th{ color: white; background-color: #343838; }
+				.balance-bf, .debit, .credit, .balance{ text-align: right; }
+			}
+			tfoot{
+				color: white;
+				background-color: #626868;
+				td{ text-align: right; font-weight: bold; }
+			}	
+			tbody{
+				a{ text-decoration: none; color: #222 }
+				.balance-bf, .debit, .credit, .balance{ 
+					font-weight: bold; text-align: right;
+					&.zero{
+						color: #a7a7a7;
+					}
+				}
+				.credit, .negative{ color: #D00000; }
+				.balance{ font-weight: bold; }
+			}				
+		}
+	}
+}

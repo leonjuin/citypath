@@ -1,0 +1,53 @@
+/*Large Desktop*/
+@media (min-width: 1200px){}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px){}
+
+/*Phone*/
+@media (max-width: 767px){
+	body{ 
+		div.ng-container.sub-accounts{ 
+			.list table{ width: 1120px; }
+		}
+	}
+}
+
+body{ 
+	div.ng-container.sub-accounts{ 
+		max-width: 1100px;
+
+		input[type="text"]:focus,
+		input[type="password"]:focus{ border-color: #dadada; }
+
+		span.input-group-addon{ font-size:11px; }
+		
+		.list table{
+			background-color: #f8f8f8;	
+			i.fa.button{ cursor: pointer; font-size: 16px;  }	
+			thead{
+				color: white;
+				background-color: #343838;
+			}
+			tbody{
+				td{ vertical-align: middle; }
+				a{ text-decoration: none; color: #222 }
+				a.btn{ color: white }
+
+				td.pm{ text-align: center; }
+				.edit a{ color: white }
+			}				
+		}
+
+		.messages .fa-2x{ vertical-align: middle; }
+
+		tr.read-mode{ display: table-row; }
+		tr.edit-mode{ display: none; }
+		tr.read-mode.show-edit{ display:none; }
+		tr.edit-mode.show-edit{ display: table-row; }				
+	}
+}
+

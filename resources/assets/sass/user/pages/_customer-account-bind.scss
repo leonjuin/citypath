@@ -1,0 +1,52 @@
+/*Large Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+
+}
+
+body.customer-account{ 
+	div.ng-container.customer-account{ 
+		max-width: 1100px;
+
+		input[type="text"]:focus,
+		input[type="password"]:focus{ border-color: #dadada; }
+
+
+		i.fa.button{ cursor: pointer; font-size: 18px;  }
+		select.form-control{ padding: 6px 3px; }
+
+		.panel-title{ /*font-weight: bold;*/ }
+		.panel-body form{ margin:15px; }
+
+		div.customers-list table{
+			background-color: #f8f8f8;		
+			thead{
+				color: white;
+				background-color: #343838;
+			}
+			tbody{
+				td{ line-height: 35px; vertical-align: middle; }
+				tr.create td{ background-color: #f2f2e2 }
+			}				
+		}
+
+		tr.read-mode{ display: table-row; }
+		tr.edit-mode{ display: none; }
+		tr.read-mode.show-edit{ display:none; }
+		tr.edit-mode.show-edit{ display: table-row; }		
+	}
+}

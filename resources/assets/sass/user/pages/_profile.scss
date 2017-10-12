@@ -1,0 +1,40 @@
+/*Large Desktop*/
+@media (min-width: 1200px) { }
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) { }
+
+/*Phone*/
+@media (max-width: 767px) { 
+	body{
+		div.ng-container.profile{ 
+
+		}
+	}
+}
+
+body{
+	div.ng-container.profile{ 
+		max-width: 900px;
+
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="password"]:focus{ 
+			background-color:#fff;
+			border-color: #dadada;
+		}
+
+		.social.panel li button{ margin:-1px; }
+
+        i.fa-facebook-official{ color: #3b5998; }
+        i.fa-google-plus-square{ color: #d34836; }
+        i.fa-certificate{ color: #DAA520; }
+
+		.panel .input-group{ margin:10px 0; }
+		.panel-title{ font-weight: bold; }
+
+	}
+}

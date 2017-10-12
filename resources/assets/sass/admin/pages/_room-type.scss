@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+
+}
+
+.room-type{
+	.row{ margin-top: 10px; }
+	table.room-type.table{ 
+		tr.cream th, td.cream{
+			background-color: #E1BD85 !important;
+			color: white !important;
+		}
+		tr th{ background-color: white; }
+		.white tr td{ background-color: white; }
+		tr:nth-of-type(odd) td{ background-color: #d8d8d8; }
+		tr:nth-of-type(even) td{ background-color: #E1E3E8; }
+	}
+}
