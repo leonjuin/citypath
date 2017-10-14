@@ -1,1 +1,0 @@
-<img src="/templates/lotus/assets/images/reservation/deluxe-triple.jpg" alt="">

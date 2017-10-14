@@ -8,13 +8,13 @@
         //set environment for website use
         //PIONER_STORE.csrf = $("body").data("csrf");
 
-        ASIATIC_HOTEL.constants.website_env = $("body").data("env");
+        CITYPATH.constants.website_env = $("body").data("env");
         
         // Set general data from PHP
         if ($("#js-data").text() !== '') {
-            ASIATIC_HOTEL.constants.data = $.parseJSON($("#js-data").text());
+            CITYPATH.constants.data = $.parseJSON($("#js-data").text());
         } else {
-            ASIATIC_HOTEL.constants.data = {};
+            CITYPATH.constants.data = {};
         }
 
 /*
@@ -24,7 +24,7 @@
         }  
 */      
         
-        ASIATIC_HOTEL.app.init();
+        CITYPATH.app.init();
     });
 
     window.console.logEnable = function(){

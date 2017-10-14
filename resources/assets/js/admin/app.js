@@ -1,15 +1,15 @@
 (function () {
     'use strict';
-    window.ASIATIC_HOTEL = {
+    window.CITYPATH = {
         constants: {}
     };
-    ASIATIC_HOTEL.app = {
+    CITYPATH.app = {
         init: function () {
             localStorage.setItem('env', $("body").data("env"));        
         },
     };
 
-    ASIATIC_HOTEL.func = {
+    CITYPATH.func = {
         breadcrumb: function(items){
             var html = [];
             items.forEach(function(item) {

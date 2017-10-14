@@ -107,6 +107,18 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'social' => [
+        'facebook' => [
+            'app_id' => env('FB_APP_ID', ''),
+            'app_secret' => env('FB_APP_SECRET', ''),
+            'graph_version' => env('FB_GRAPH_VERSION', '')
+        ],
+        'google' => [
+            'app_id' => env('GOOGLE_APP_ID', ''),
+            'app_secret' => env('GOOGLE_APP_SECRET', '')
+        ]
+    ],
+
     'payment' =>[
         'eghl' => [
             'merchant_id' => env('EGHL_MERCHANT_ID', ''),

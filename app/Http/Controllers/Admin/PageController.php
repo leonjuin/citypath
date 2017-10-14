@@ -19,11 +19,6 @@ class PageController extends Controller
         return view('pages.admin.general');
     }
 
-    public function showNgMap()
-    {   
-        return view('pages.admin.map-general');
-    }
-
     public function ngTemplate($name)
     {
         $view = 'pages.admin.templates.'.$name;

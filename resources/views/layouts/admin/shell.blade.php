@@ -93,12 +93,7 @@
             <!--- Divider -->
             <div id="sidebar-menu">
                <ul>
-                  <li class="category"><a href='/admin/room/type'><i class="fa fa-square" aria-hidden="true"></i><span>Room Types</span> <span class="pull-right"></span></a></li>
-                  <li class="category"><a href='/admin/rate/calendar'><i class="fa fa-calendar" aria-hidden="true"></i><span>Room Rate Calendar</span> <span class="pull-right"></span></a></li>
-                  <li class="category"><a href='/admin/rate/setting'><i class="fa fa-line-chart" aria-hidden="true"></i><span>Room Rate Setting</span> <span class="pull-right"></span></a></li>
-                  <li class="category"><a href='/admin/sales/report'><i class="fa fa-area-chart" aria-hidden="true"></i><span>Sales Report</span> <span class="pull-right"></span></a></li>
-                  <li class="category"><a href='/admin/booking/history'><i class="fa fa-history" aria-hidden="true"></i><span>Booking History</span> <span class="pull-right"></span></a></li>
-                  <li class="category"><a href='/admin/check-in'><i class="fa fa-arrows-h" aria-hidden="true"></i><span>Check In</span> <span class="pull-right"></span></a></li>
+                  <li class="category"><a href='/admin/'><i class="fa fa-home" aria-hidden="true"></i><span>Home</span> <span class="pull-right"></span></a></li>
                   
                </ul>
                <div class="clearfix"></div>
